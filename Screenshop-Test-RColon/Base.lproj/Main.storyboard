@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Screenshop_Test_RColon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dzl-wJ-6px">
+                                <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Sjz-aF-LJg"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Circle What You Like" id="fZ7-Kh-x7r">
+                                        <barButtonItem key="leftBarButtonItem" title="Reset" id="4LS-T0-gQc">
+                                            <connections>
+                                                <action selector="resetBtnClicked:" destination="BYZ-38-t0r" id="RPP-SL-8lb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="uyY-kq-MOr">
+                                            <connections>
+                                                <action selector="doneBtnClicked:" destination="BYZ-38-t0r" id="HgG-HI-2jc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z0u-pC-f5D">
+                                <rect key="frame" x="20" y="109" width="374" height="773"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z0u-pC-f5D" secondAttribute="trailing" constant="20" id="7CJ-fw-cOQ"/>
+                            <constraint firstItem="Dzl-wJ-6px" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Oz2-rI-KgD"/>
+                            <constraint firstItem="z0u-pC-f5D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Qbi-XE-3lB"/>
+                            <constraint firstItem="Dzl-wJ-6px" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="R22-Yh-GOg"/>
+                            <constraint firstItem="z0u-pC-f5D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="aHc-ie-DQh"/>
+                            <constraint firstItem="z0u-pC-f5D" firstAttribute="top" secondItem="Dzl-wJ-6px" secondAttribute="bottom" constant="20" id="cYW-bA-Yod"/>
+                            <constraint firstItem="Dzl-wJ-6px" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wRZ-Ua-aph"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainImageView" destination="z0u-pC-f5D" id="rPd-j0-NdD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>

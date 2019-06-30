@@ -1,0 +1,6 @@
+framework module Pods_Screenshop_Test_RColon {
+  umbrella header "Pods-Screenshop-Test-RColon-umbrella.h"
+
+  export *
+  module * { export * }
+}
